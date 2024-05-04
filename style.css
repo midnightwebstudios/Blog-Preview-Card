@@ -1,25 +1,30 @@
 body {
   background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
 }
 
 main {
   background-color: white;
   margin: auto;
   width: 25%;
-  position: relative;
-  top: 200px;
   padding: 15px;
   border-radius: 15px;
   border: 1px solid black;
   box-shadow: 8px 8px black;
-  font-size: 16px;
-  font-family: "Figtree", sans-serif;
 }
 
-.card {
+.image {
+  display: flex;
+  flex-direction: column;
   border-radius: 15px;
   width: 98%;
-  display: block;
   margin: auto;
   padding-top: 5px;
 }
@@ -30,8 +35,8 @@ main {
 
 .learning {
   background-color: hsl(47, 88%, 63%);
-  display: inline-block;
-  padding: 8px;
+  width: fit-content;
+  padding: 6px 12px;
   margin-top: 20px;
   border-radius: 5px;
   font-size: 12px;
@@ -40,12 +45,11 @@ main {
 
 .date {
   font-size: 14px;
-  margin-top: 0px;
   font-weight: 500;
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 
@@ -56,6 +60,7 @@ a {
 
 a:hover {
   color: hsl(47, 88%, 63%);
+  cursor: pointer;
   transition: 0.2s;
 }
 
@@ -64,6 +69,11 @@ a:hover {
   color: hsl(0, 0%, 50%);
   font-weight: 500;
   line-height: 1.5;
+}
+
+footer {
+  display: flex;
+  align-items: center;
 }
 
 .avatar {
