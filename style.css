@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 125vh;
+  min-height: 100vh;
   font-size: 16px;
   font-family: "Figtree", sans-serif;
 }
